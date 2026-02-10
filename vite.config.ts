@@ -1,17 +1,25 @@
 import { defineConfig } from 'vite'
-import path, { resolve } from 'path' // resolve를 여기서 가져와야 합니다!
+import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import { glob } from 'glob' // 모든 HTML 파일을 자동으로 찾기 위해 필요합니다.
 
 export default defineConfig({
   base: '/work_archive/',
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        // public 폴더를 경로에서 제외하고 등록해보세요. 
-        // 만약 public 안에 계속 두실 거라면 아래 경로를 유지하세요.
-        'dm-bnr-1': resolve(__dirname, 'public/works/2020/dm-bnr-1.html')
+        // 최상위 index.html 등록
+        main: path.resolve(__dirname, 'index.html'),
+        // public/works 폴더 내의 모든 HTML 파일을 자동으로 찾아서 등록합니다.
+        ...Object.fromEntries(
+          glob.sync('public/works/**/*.html').map(file => [
+            // 파일명을 키값으로 사용 (예: dm-bnr-1)
+            path.parse(file).name,
+            // 실제 파일 경로 연결
+            path.resolve(__dirname, file)
+          ])
+        )
       }
     }
   },
