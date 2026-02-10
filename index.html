@@ -33,134 +33,186 @@
             <button class="year-tab" data-year="2026">2026</button>
             <button class="year-tab" data-year="2025">2025</button>
             <button class="year-tab" data-year="2024">2024</button>
-        </div>
-        <!-- Category Filter -->
-        <div class="category-filter">
-            <button class="filter-button active" data-category="all">전체</button>
-            <button class="filter-button" data-category="팝업/배너">팝업/배너</button>
-            <button class="filter-button" data-category="인쇄물">인쇄물</button>
-            <button class="filter-button" data-category="UI 디자인">UI 디자인</button>
-            <button class="filter-button" data-category="퍼블리싱">퍼블리싱</button>
+        </div>     
+        
+        <!-- Work Type Filter (Secondary) -->
+        <div class="type-filter">
+            <button class="type-chip active" data-type="all">All</button>
+            <button class="type-chip" data-type="UI">UI</button>
+            <button class="type-chip" data-type="Popup">Popup</button>
+            <button class="type-chip" data-type="Banner">Banner</button>
+            <button class="type-chip" data-type="Print">Print</button>
+            <button class="type-chip" data-type="Publishing">Publishing</button>
         </div>
 
         <!-- Works Grid -->
         <div class="works-grid">
             <!-- Work Card 1 -->
-            <a href="works/work-1.html" class="work-card" data-category="팝업/배너">
+            <a href="works/work-1.html" class="work-card" data-year="2026" data-type="Banner">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1564244611788-32c95b7bedd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3B1cCUyMGJhbm5lciUyMGRlc2lnbnxlbnwxfHx8fDE3Njk4NjgyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="이커머스 메인 배너 디자인">
+                    <span class="work-badge">Banner</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">팝업/배너</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">이커머스 메인 배너 디자인</h3>
                         <span class="work-card-year">2026</span>
                     </div>
-                    <h3 class="work-card-title">이커머스 메인 배너 디자인</h3>
+                    <p class="work-card-description">시각적 임팩트를 유지하며 브랜드 컬러와 타이포를 일관되게 사용한 배너 시스템</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#figma</span>
+                        <span class="tag">#photoshop</span>
+                        <span class="tag">#promotion</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 2 -->
-            <a href="works/work-2.html" class="work-card" data-category="인쇄물">
+            <a href="works/work-2.html" class="work-card" data-year="2025" data-type="Print">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1722207070278-f55df41406c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmludCUyMGRlc2lnbiUyMGJyb2NodXJlfGVufDF8fHx8MTc2OTg2ODI2OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="기업 브로슈어 디자인">
+                    <span class="work-badge">Print</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">인쇄물</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">기업 브로슈어 디자인</h3>
                         <span class="work-card-year">2025</span>
                     </div>
-                    <h3 class="work-card-title">기업 브로슈어 디자인</h3>
+                    <p class="work-card-description">정보의 위계를 명확히 하고 시각 자료를 활용한 B2B 영업 브로슈어</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#indesign</span>
+                        <span class="tag">#branding</span>
+                        <span class="tag">#b2b</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 3 -->
-            <a href="works/work-3.html" class="work-card" data-category="UI 디자인">
+            <a href="works/work-3.html" class="work-card" data-year="2026" data-type="UI">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1699040309386-11c615ed64d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1aSUyMGRlc2lnbiUyMGludGVyZmFjZXxlbnwxfHx8fDE3Njk3NzgwODF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="모바일 앱 UI 디자인">
+                    <span class="work-badge">UI</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">UI 디자인</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">모바일 앱 UI 디자인</h3>
                         <span class="work-card-year">2026</span>
                     </div>
-                    <h3 class="work-card-title">모바일 앱 UI 디자인</h3>
+                    <p class="work-card-description">카드 기반 UI로 직관성을 높인 금융 앱 리뉴얼 프로젝트</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#figma</span>
+                        <span class="tag">#mobile</span>
+                        <span class="tag">#ux</span>
+                        <span class="tag">#design-system</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 4 -->
-            <a href="works/work-4.html" class="work-card" data-category="퍼블리싱">
+            <a href="works/work-4.html" class="work-card" data-year="2025" data-type="Publishing">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1643116774075-acc00caa9a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGV8ZW58MXx8fHwxNzY5ODMwMDIzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="랜딩 페이지 퍼블리싱">
+                    <span class="work-badge">Publishing</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">퍼블리싱</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">랜딩 페이지 퍼블리싱</h3>
                         <span class="work-card-year">2025</span>
                     </div>
-                    <h3 class="work-card-title">랜딩 페이지 퍼블리싱</h3>
+                    <p class="work-card-description">반응형 웹 구현으로 다양한 디바이스에서 최적화된 경험 제공</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#html</span>
+                        <span class="tag">#css</span>
+                        <span class="tag">#javascript</span>
+                        <span class="tag">#responsive</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 5 -->
-            <a href="works/work-5.html" class="work-card" data-category="인쇄물">
+            <a href="works/work-5.html" class="work-card" data-year="2025" data-type="Print">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2OTgzNjUwNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="브랜드 아이덴티티 작업">
+                    <span class="work-badge">Print</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">인쇄물</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">브랜드 아이덴티티 작업</h3>
                         <span class="work-card-year">2025</span>
                     </div>
-                    <h3 class="work-card-title">브랜드 아이덴티티 작업</h3>
+                    <p class="work-card-description">브랜드의 정체성을 시각화하고 일관된 디자인 언어 구축</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#illustrator</span>
+                        <span class="tag">#branding</span>
+                        <span class="tag">#identity</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 6 -->
-            <a href="works/work-6.html" class="work-card" data-category="팝업/배너">
+            <a href="works/work-6.html" class="work-card" data-year="2024" data-type="Popup">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1649881927251-46644283751a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwcG9zdGVyJTIwZGVzaWdufGVufDF8fHx8MTc2OTgyMzIwNXww&ixlib=rb-4.1.0&q=80&w=1080" alt="이벤트 포스터 디자인">
+                    <span class="work-badge">Popup</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">팝업/배너</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">이벤트 포스터 디자인</h3>
                         <span class="work-card-year">2024</span>
                     </div>
-                    <h3 class="work-card-title">이벤트 포스터 디자인</h3>
+                    <p class="work-card-description">임팩트 있��� 비주얼로 이벤트 핵심 정보를 효과적으로 전달</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#figma</span>
+                        <span class="tag">#event</span>
+                        <span class="tag">#poster</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 7 -->
-            <a href="works/work-7.html" class="work-card" data-category="UI 디자인">
+            <a href="works/work-7.html" class="work-card" data-year="2024" data-type="UI">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1707836868495-3307d371aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwbW9ja3VwJTIwZGVzaWdufGVufDF8fHx8MTc2OTg2MzcxNXww&ixlib=rb-4.1.0&q=80&w=1080" alt="웹사이트 리디자인">
+                    <span class="work-badge">UI</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">UI 디자인</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">웹사이트 리디자인</h3>
                         <span class="work-card-year">2024</span>
                     </div>
-                    <h3 class="work-card-title">웹사이트 리디자인</h3>
+                    <p class="work-card-description">사용자 친화적인 인터페이스와 현대적인 디자인 시스템 적용</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#figma</span>
+                        <span class="tag">#web</span>
+                        <span class="tag">#redesign</span>
+                    </div>
                 </div>
             </a>
 
             <!-- Work Card 8 -->
-            <a href="works/work-8.html" class="work-card" data-category="인쇄물">
+            <a href="works/work-8.html" class="work-card" data-year="2024" data-type="Print">
                 <div class="work-card-image">
                     <img src="https://images.unsplash.com/photo-1612544408664-5d919fe4d619?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWdhemluZSUyMGxheW91dCUyMGRlc2lnbnxlbnwxfHx8fDE3Njk4NjgyNzB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="매거진 레이아웃 디자인">
+                    <span class="work-badge">Print</span>
                 </div>
-                <div class="work-card-content">
-                    <div class="work-card-meta">
-                        <span class="work-card-category">인쇄물</span>
+                <div class="work-card-body">
+                    <div class="work-card-header">
+                        <h3 class="work-card-title">매거진 레이아웃 디자인</h3>
                         <span class="work-card-year">2024</span>
                     </div>
-                    <h3 class="work-card-title">매거진 레이아웃 디자인</h3>
+                    <p class="work-card-description">타이포그래피와 이미지의 조화로 읽기 편한 레이아웃 구성</p>
+                    <div class="work-card-tags">
+                        <span class="tag">#indesign</span>
+                        <span class="tag">#editorial</span>
+                        <span class="tag">#typography</span>
+                    </div>
                 </div>
             </a>
         </div>
 
         <!-- Empty State -->
         <div class="empty-state" style="display: none;">
-            <p>해당 카테고리의 작업물이 없습니다.</p>
+            <p>해당 조건의 작업물이 없습니다.</p>
         </div>
     </main>
 
